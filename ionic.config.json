@@ -1,0 +1,7 @@
+{
+  "name": "kitchenlist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
