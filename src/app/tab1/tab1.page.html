@@ -1,17 +1,100 @@
+<!-- Controla el header -->
+
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			KitchenList
+		</ion-title>
+		<ion-buttons slot="end">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" class="ion-padding">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">KitchenList</ion-title>
+		</ion-toolbar>
+	</ion-header>
+	
+	<!-- Tabs de opciones recomendadas -->
+	
+	<ion-segment>
+		<ion-segment-button value="recomendados">
+			<ion-label>Recomendados</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="creados">
+			<ion-label>Creados</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="guardados">
+			<ion-label>Guardados</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+	
+	<!-- boton de filtro -->
+	<ion-button size="small" color="light" class="ion-margin-top">
+		<ion-icon name="swap-vertical-outline"></ion-icon>
+		Ordenar
+	</ion-button>
+	
+	<section>
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4">
+						<ion-img style="height: 100%; object-fit: cover;" src="https://www.annarecetasfaciles.com/files/lasana-de-carne-2-1-815x458.jpg"></ion-img>
+					</ion-col>
+					<ion-col size="8">
+						<ion-card-header>
+							<ion-grid class="ion-no-padding">
+								<ion-row class="ion-no-padding ion-align-items-center">
+									<ion-col class="ion-text-start">
+										<ion-card-title>Tacos al pastor</ion-card-title>
+									</ion-col>
+									<ion-col class="ion-text-end">
+										<ion-button color="light"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+									</ion-col>
+								</ion-row>
+							</ion-grid>
+						</ion-card-header>
+						<ion-card-content>
+							<div class="description">
+								<p>Además, la carne es preparada con un marinado tradicional mexicano llamado adobo, el cual está hecho con achiote, especias y chiles rojos molidos.</p>
+							</div>
+							<div class="footer">
+								<ion-grid class="ion-no-padding">
+									<ion-row class="ion-align-items-center ion-no-padding">
+										<ion-col class="ion-text-start ion-no-padding">
+											<div class="ranking">
+												<ion-grid class="ion-no-padding">
+													<ion-row class="ion-align-items-center ion-no-padding">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+														</ion-col>
+														<ion-col size="4">
+															4.0
+														</ion-col>
+													</ion-row>
+												</ion-grid>
+											</div>
+										</ion-col>
+										<ion-col class="ion-text-end">
+											<ion-button color="light"><ion-icon name="heart-outline"></ion-icon></ion-button>
+										</ion-col>
+									</ion-row>
+								</ion-grid>
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-card>
+	</section>
+	
+	<!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
