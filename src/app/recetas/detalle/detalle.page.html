@@ -1,9 +1,69 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>detalle</ion-title>
+
+    <ion-buttons slot="end">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+   
+    <ion-slides pager="true">
+      <ion-slide class="slide-1">
+        <img  src="https://dam.cocinafacil.com.mx/wp-content/uploads/2018/09/pasta-con-crema-de-espinaca.jpg" alt="pasta">
+      </ion-slide>
 
-</ion-content>
+      <ion-slide class="slide-2">
+       <img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/09/pasta-alfredo-con-camarones.jpg" alt="">
+      </ion-slide>
+
+      <ion-slide class="slide-3">
+       <img src="https://pbs.twimg.com/media/Dxd5Q2oXgAAM9FX.jpg" alt="">
+      </ion-slide>
+    </ion-slides>
+
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-card-title>Pasta italiana</ion-card-title>
+
+    </ion-card-header>
+  
+    <ion-card-content>
+      Las pasta tiene su punto perfecto de cocción y como todo en la vida, las cosas aparentemente más simples, 
+      son las más difíciles de conseguir. 
+    
+      <div class="footer">
+        <ion-grid class="ion-no-padding">
+          <ion-row class="ion-align-items-center ion-no-padding">
+            <ion-col class="ion-text-start ion-no-padding">
+              <div class="ranking">
+                <ion-grid  class="ion-no-padding">
+                  <ion-row class="ion-align-items-center ion-no-padding">
+                    <ion-col size="5" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </ion-col>
+                    <ion-col size="7">
+                      3.0
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-col>
+            <ion-col class="ion-text-end">
+            
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  </ion-content>

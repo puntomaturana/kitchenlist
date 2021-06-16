@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>perfil</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <section class="user ion-margin-bottom">
+    <ion-avatar class="img mx-auto">
+      <img src="https://www.ecestaticos.com/image/clipping/37e2ae50a6bed84cddb4becb3d0fc603/esta-es-una-de-las-personas-mas-inteligentes-del-mundo-y-va-a-cambiarlo-para-siempre.jpg" class="center">
+    </ion-avatar>
+  </section>
+  	
+  <ion-segment div class="tab">
+    <ion-segment-button value="datos recomendados">
+      <ion-label>Datos Generales</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="datos personales">
+      <ion-label>informacion personal</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
 </ion-content>

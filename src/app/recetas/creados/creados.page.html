@@ -1,9 +1,184 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>creados</ion-title>
+    <ion-buttons slot="end">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+	
+<ion-segment div class=elemento>
+  <ion-segment-button value="recomendados">
+    <ion-label>Recomendados</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="creados">
+    <ion-label>Creados</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="guardados">
+    <ion-label>Guardados</ion-label>
+  </ion-segment-button>
+</ion-segment>
 
+<h2>Categoria</h2>
+
+<ion-content>
+  <ion-item color="primary">
+    <ion-label>
+      <p div class="text">sopas</p>
+    </ion-label>
+    <div>
+    <ion-button>
+      <ion-icon slot="" name="add-circle-outline"></ion-icon>
+    </ion-button>
+    
+    <ion-button>
+      <ion-icon slot="" name="trash"></ion-icon>
+    </ion-button>
+  </div>
+  </ion-item>
+
+  
+  <div class="contenido">
+    <ion-grid>
+  <ion-card>
+    <ion-row>
+      <ion-col size="4">
+       <img  div class="img" src="https://i.pinimg.com/originals/13/0e/0c/130e0ce9595b149b6b0c87ae3f5badb9.jpg" alt="">
+        </ion-col>
+         <ion-col size="8">
+    <ion-card-header>
+       <ion-card-title>Sopa de pollo</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p div class="texto"> podéis hacer en olla rápida y el tiempo disminuye considerablemente....</p>
+   </ion-card-content> 
+    <div class="footer">
+      Guarado
+     </div>
+     </ion-col>
+      </ion-row>
+       </ion-card>
+       <br>
+       <ion-card>
+        <ion-row>
+          <ion-col size="4">
+           <img style="height: 100%; object-fit: cover;" div class="img" src="https://cocinerosargentinos.com/content/recipes/500x500/cazuelas-otonales.2549.jpg" alt="">
+            </ion-col>
+             <ion-col size="8">
+        <ion-card-header>
+           <ion-card-title>cazuela</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+          <p class="texto"> podéis hacer en olla rápida y el tiempo disminuye considerablemente....</p>
+       </ion-card-content> 
+        <div class="foot">
+          Guarado
+         </div>
+         </ion-col>
+          </ion-row>
+           </ion-card>
+          
+    </ion-grid>
+  </div>
+  
+  <ion-item color="primary">
+    <ion-label>
+      <p div class="text">Platos fuertes</p>
+    </ion-label>
+    <div>
+    <ion-button>
+      <ion-icon slot="" name="add-circle-outline"></ion-icon>
+    </ion-button>
+    
+    <ion-button>
+      <ion-icon slot="" name="trash"></ion-icon>
+    </ion-button>
+  </div>
+  </ion-item>
+
+  <div class="contenido">
+    <ion-grid>
+  <ion-card>
+    <ion-row>
+      <ion-col size="4">
+       <img style="height: 100%; object-fit: cover;" div class="img" src="https://www.hola.com/imagenes/cocina/recetas/20191212156140/receta-risotto-pulpo-mandarina/0-758-375/risotto-pulpo-adobe-m.jpg" alt="">
+        </ion-col>
+         <ion-col size="8">
+    <ion-card-header>
+       <ion-card-title>Risotto</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p div class="texto"> podéis hacer en olla rápida y el tiempo disminuye considerablemente....</p>
+   </ion-card-content> 
+    <div class="footer">
+      Guarado
+     </div>
+     </ion-col>
+      </ion-row>
+       </ion-card> 
+    </ion-grid>
+      </div>
+
+      <ion-item color="primary">
+        <ion-label>
+          <p div class="text">Postres</p>
+        </ion-label>
+        <div>
+        <ion-button>
+          <ion-icon slot="" name="add-circle-outline"></ion-icon>
+        </ion-button>
+        
+        <ion-button>
+          <ion-icon slot="" name="trash"></ion-icon>
+        </ion-button>
+      </div>
+      </ion-item>
+
+      <div class="contenido">
+        <ion-grid>
+      <ion-card>
+        <ion-row>
+          <ion-col size="4">
+           <img  div class="img" src="https://i.pinimg.com/originals/1f/df/d5/1fdfd54e7da43a145fbfecee33f29d47.jpg" alt="">
+            </ion-col>
+             <ion-col size="8">
+        <ion-card-header>
+           <ion-card-title>Torta de yogurt</ion-card-title>
+        </ion-card-header>
+    
+        <ion-card-content>
+          <p div class="texto"> podéis hacer en olla rápida y el tiempo disminuye considerablemente....</p>
+       </ion-card-content> 
+        <div class="footer">
+          Guarado
+         </div>
+         </ion-col>
+          </ion-row>
+           </ion-card>
+           <br>
+           <ion-card>
+            <ion-row>
+              <ion-col size="4">
+               <img  div class="img" src="https://www.elmundoeats.com/wp-content/uploads/2019/06/Classic-Creme-Caramel.jpg" alt="">
+                </ion-col>
+                 <ion-col size="8">
+            <ion-card-header>
+               <ion-card-title>Flan de caramelo</ion-card-title>
+            </ion-card-header>
+        
+            <ion-card-content>
+              <p div class="texto"> podéis hacer en olla rápida y el tiempo disminuye considerablemente....</p>
+           </ion-card-content> 
+            <div class="foot">
+              Guarado
+             </div>
+             </ion-col>
+              </ion-row>
+               </ion-card>
+        </ion-grid>
+        </div>
 </ion-content>

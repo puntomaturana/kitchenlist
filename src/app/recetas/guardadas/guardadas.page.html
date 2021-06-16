@@ -1,9 +1,266 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>guardadas</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true">
+	<ion-toolbar>
+		<ion-title>
+			KitchenList
+		</ion-title>
+		<ion-buttons slot="end">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true" class="ion-padding">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">KitchenList</ion-title>
+		</ion-toolbar>
+	</ion-header>
+	
+	<!-- Tabs de opciones recomendadas -->
+	
+	<ion-segment>
+		<ion-segment-button value="recomendados">
+			<ion-label>Recomendados</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="creados">
+			<ion-label>Creados</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="guardados">
+			<ion-label>Guardados</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+	
+	<!-- boton de filtro -->
+	<ion-button size="small" color="light" class="ion-margin-top">
+		<ion-icon name="swap-vertical-outline"></ion-icon>
+		Ordenar
+	</ion-button>
+	
+	<section>
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4">
+						<ion-img style="height: 100%; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0021/7068/3428/products/MilHojas_800x.jpg?v=1525289992"></ion-img>
+					</ion-col>
+					<ion-col size="8">
+						<ion-card-header>
+							<ion-grid class="ion-no-padding">
+								<ion-row class="ion-no-padding ion-align-items-center">
+									<ion-col class="ion-text-start">
+										<ion-card-title>Torta mil hojas</ion-card-title>
+									</ion-col>
+									<ion-col class="ion-text-end">
+										<ion-button color="light"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+									</ion-col>
+								</ion-row>
+							</ion-grid>
+						</ion-card-header>
+						<ion-card-content>
+							<div class="description">
+								<p> La torta de mil hojas con manjar es la torta más tradicional en Chile. Esta receta es de mi tía abuela, creo que he comido decenas de veces esta torta y me encanta. Es rica recién hecha o reposada unos días....</p>
+							</div>
+							<div class="footer">
+								<ion-grid class="ion-no-padding">
+									<ion-row class="ion-align-items-center ion-no-padding">
+										<ion-col class="ion-text-start ion-no-padding">
+											<div class="ranking">
+												<ion-grid class="ion-no-padding">
+													<ion-row class="ion-align-items-center ion-no-padding">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+														</ion-col>
+														<ion-col size="4">
+															4.0
+														</ion-col>
+													</ion-row>
+												</ion-grid>
+											</div>
+										</ion-col>
+										<ion-col class="ion-text-end">
+											<ion-button color="light"><ion-icon name="heart-outline"></ion-icon></ion-button>
+										</ion-col>
+									</ion-row>
+								</ion-grid>
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-card>
+          <br>
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4">
+						<ion-img style="height: 100%; object-fit: cover;" src="https://i.pinimg.com/originals/f0/4e/0a/f04e0a4372b017e93f411935f585a0d5.jpg"></ion-img>
+					</ion-col>
+					<ion-col size="8">
+						<ion-card-header>
+							<ion-grid class="ion-no-padding">
+								<ion-row class="ion-no-padding ion-align-items-center">
+									<ion-col class="ion-text-start">
+										<ion-card-title>Salmon al horno</ion-card-title>
+									</ion-col>
+									<ion-col class="ion-text-end">
+										<ion-button color="light"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+									</ion-col>
+								</ion-row>
+							</ion-grid>
+						</ion-card-header>
+						<ion-card-content>
+							<div class="description">
+								<p>Spaghetti con salsa boloñesa o bolognesa una receta muy popular y sabrosa. Siempre hay variedades en su preparación, con pequeños detalles en cuanto a los ingredientes para hacer la boloñesa...</p>
+							</div>
+							<div class="footer">
+								<ion-grid class="ion-no-padding">
+									<ion-row class="ion-align-items-center ion-no-padding">
+										<ion-col class="ion-text-start ion-no-padding">
+											<div class="ranking">
+												<ion-grid class="ion-no-padding">
+													<ion-row class="ion-align-items-center ion-no-padding">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+														</ion-col>
+														<ion-col size="4">
+															4.0
+														</ion-col>
+													</ion-row>
+												</ion-grid>
+											</div>
+										</ion-col>
+										<ion-col class="ion-text-end">
+											<ion-button color="light"><ion-icon name="heart-outline"></ion-icon></ion-button>
+										</ion-col>
+									</ion-row>
+								</ion-grid>
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-card>
+            <br>
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4">
+						<ion-img style="height: 100%; object-fit: cover;" src="https://www.clara.es/medio/2018/09/04/como-hacer-pavo-de-accion-de-gracias-relleno-manzana-orejones_367e9159_1000x1500.jpg"></ion-img>
+					</ion-col>
+					<ion-col size="8">
+						<ion-card-header>
+							<ion-grid class="ion-no-padding">
+								<ion-row class="ion-no-padding ion-align-items-center">
+									<ion-col class="ion-text-start">
+										<ion-card-title>pavo relleno</ion-card-title>
+									</ion-col>
+									<ion-col class="ion-text-end">
+										<ion-button color="light"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+									</ion-col>
+								</ion-row>
+							</ion-grid>
+						</ion-card-header>
+						<ion-card-content>
+							<div class="description">
+								<p>Para hacer pavo relleno, antes que nada, hay que vaciarlo (puedes pedir que te quiten las víscera en la pollería donde lo vayas a comprar)... </p>
+							</div>
+							<div class="footer">
+								<ion-grid class="ion-no-padding">
+									<ion-row class="ion-align-items-center ion-no-padding">
+										<ion-col class="ion-text-start ion-no-padding">
+											<div class="ranking">
+												<ion-grid class="ion-no-padding">
+													<ion-row class="ion-align-items-center ion-no-padding">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+														</ion-col>
+														<ion-col size="4">
+															4.0
+														</ion-col>
+													</ion-row>
+												</ion-grid>
+											</div>
+										</ion-col>
+										<ion-col class="ion-text-end">
+											<ion-button color="light"><ion-icon name="heart-outline"></ion-icon></ion-button>
+										</ion-col>
+									</ion-row>
+								</ion-grid>
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-card>
+		<br>
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col size="4">
+						<ion-img style="height: 100%; object-fit: cover;" src="https://content-cocina.lecturas.com/medio/2018/07/19/salteado-de-arroz-con-pollo-y-verduras_51c8e822_800x800.jpg"></ion-img>
+					</ion-col>
+					<ion-col size="8">
+						<ion-card-header>
+							<ion-grid class="ion-no-padding">
+								<ion-row class="ion-no-padding ion-align-items-center">
+									<ion-col class="ion-text-start">
+										<ion-card-title>Salteado de pollo</ion-card-title>
+									</ion-col>
+									<ion-col class="ion-text-end">
+										<ion-button color="light"><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+									</ion-col>
+								</ion-row>
+							</ion-grid>
+						</ion-card-header>
+						<ion-card-content>
+							<div class="description">
+								<p> La receta de salteado de pollo con verduras es fácil y rápida de hacer, es ideal para servir cuando tenemos invitados o nos apetece disfrutar de una cena más ligera y saludable.</p>
+							</div>
+							<div class="footer">
+								<ion-grid class="ion-no-padding">
+									<ion-row class="ion-align-items-center ion-no-padding">
+										<ion-col class="ion-text-start ion-no-padding">
+											<div class="ranking">
+												<ion-grid class="ion-no-padding">
+													<ion-row class="ion-align-items-center ion-no-padding">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+															<ion-icon name="star-outline"></ion-icon>
+														</ion-col>
+														<ion-col size="4">
+															4.0
+														</ion-col>
+													</ion-row>
+												</ion-grid>
+											</div>
+										</ion-col>
+										<ion-col class="ion-text-end">
+											<ion-button color="light"><ion-icon name="heart-outline"></ion-icon></ion-button>
+										</ion-col>
+									</ion-row>
+								</ion-grid>
+							</div>
+						</ion-card-content>
+					</ion-col>
+				</ion-row>
+			</ion-grid>	
+		</ion-card>
+	</section>
+	
+	<!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>

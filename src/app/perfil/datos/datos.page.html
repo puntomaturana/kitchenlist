@@ -1,9 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>datos</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
+  <ion-list div class="list">
+    <ion-item>
+      <ion-label color="primary" position="floating">Correo electronico</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+
+      <ion-label color="primary" position="floating">Numero de telefono</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Sexo</ion-label>
+      <ion-select placeholder="seleccion">
+        <ion-select-option value="f">Mujer</ion-select-option>
+        <ion-select-option value="m">Hombre</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="boton">
+    <ion-button expand="block">Guardar</ion-button>
+  </div>
+
 </ion-content>
+
+<ion-footer div class="pie">
+  <p>Cambiar Contraseña</p>
+</ion-footer>

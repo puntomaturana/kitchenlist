@@ -1,0 +1,43 @@
+
+.imagen{
+width: 100%;
+max-width: 600px;
+position: relative;
+display: flex;
+align-items: center;
+
+
+
+img{
+    width: 100%;
+}
+
+.text{
+text-align: center;
+h1, p{
+  color:#fff;
+  padding: 10px 20px;
+  position: absolute;
+
+}
+}
+}
+.contenido{
+  margin: 12px;
+  padding-top: 40px;
+}
+
+.boton{
+  padding-top: 20px;
+  margin: 40px;
+
+}
+
+.final{
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color:  #0000FF;
+}
+
+

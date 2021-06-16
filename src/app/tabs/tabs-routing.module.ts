@@ -17,7 +17,11 @@ const routes: Routes = [
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('../recetas/nueva/nueva.module').then(m => m.NuevaPageModule)
+      },
+      {
+        path: 'tab4',
+        loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
       },
       /*{
         path: 'tab4',

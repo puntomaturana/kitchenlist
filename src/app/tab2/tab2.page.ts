@@ -7,6 +7,30 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  lista:string[];
+  constructor() {
+    this.inicializar();
+  }
 
+  inicializar(){
+    this.lista =[
+      'pollo',
+      'pastas',
+      'sopas',
+      'Carne',
+      'salteados',
+       ];
+  }
+
+  Busqueda(ev: any){
+    this.inicializar();
+
+    const val = ev.target.value;
+
+    if (val && val.trim() !== '') {
+      this.lista = this.lista.filter((item) => {
+      return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      } );
+    }
+  }
 }

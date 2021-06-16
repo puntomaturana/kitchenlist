@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>informacion</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  
+  <ion-list div class="list">
+    <ion-item>
+      <ion-label color="primary" position="floating">Nombre</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+
+      <ion-label color="primary" position="floating">Nombre de usario</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Nivel de conocimiento</ion-label>
+      <ion-select placeholder="selecciona">
+        <ion-select-option value="p">Principiante</ion-select-option>
+        <ion-select-option value="m">Intermedio</ion-select-option>
+        <ion-select-option value="E"> Experto</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="boton">
+    <ion-button expand="block">Guardar</ion-button>
+  </div>
 
 </ion-content>
+
+<ion-footer div class="pie">
+  <p>Cerrar sesión</p>
+</ion-footer>
