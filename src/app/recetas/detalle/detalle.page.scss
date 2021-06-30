@@ -5,3 +5,65 @@ margin: 0;
 .ranking{
    margin-top: 10px;
 }
+
+.cont-menu{
+   width: 400px;
+   margin: 50px auto;
+   
+}
+
+.cont-menu .cont-enlace{
+   box-shadow: 0px 0px 2px 1px white;
+}
+
+.cont-menu .cont-enlace .opcion{
+   border-color: #8A8A8A;
+   border-style: solid;
+   display: flex;
+   justify-content: space-between;
+   color: black;
+   padding:6px ;
+   font-size: 22px;
+   border-radius:60px;
+}
+
+.cont-menu .cont-enlace .opcion .icono{
+   background-color: #ECB62F;
+   color: white;
+   font-weight: bold;
+   font-size: 22px;
+   text-align: center;
+   width: 30px;
+   height: 30px;
+   border-radius: 20px;
+}
+
+
+
+
+.cont-menu .cont-enlace .enlace a{
+   display: block;
+   padding: 10px 15px;
+   text-decoration: none;
+   font-size: 20px;
+   color: rgba(0,0,0,.8);
+   background-color: white;
+}
+
+h2{
+   text-align: center;
+}
+
+h4{
+   padding-top: 20px;
+margin: 20px;
+}
+
+.moka{
+   padding: 20px;
+   border-image: round;
+}
+
+.texto{
+ text-align: left;
+}

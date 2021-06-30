@@ -1,32 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pefil</ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-segment div class="tab">
+  <ion-segment-button value="datos recomendados">
+    <ion-label>Datos Generales</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="datos personales">
+    <ion-label>informacion personal</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
 <ion-content>
-  
-  <ion-list div class="list">
-    <ion-item>
-      <ion-label color="primary" position="floating">Nombre</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
+  <ion-content>
+    <ion-avatar div class=img>
+       <img src="https://www.ecestaticos.com/image/clipping/37e2ae50a6bed84cddb4becb3d0fc603/esta-es-una-de-las-personas-mas-inteligentes-del-mundo-y-va-a-cambiarlo-para-siempre.jpg" class="center">
+     </ion-avatar>
 
-      <ion-label color="primary" position="floating">Nombre de usario</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+     <ion-list div class="list">
+      <ion-item>
+        <ion-label color="primary" position="floating">Nombre</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        
+        <ion-label color="primary" position="floating">Nombre de usario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label color="primary">Nivel de conocimiento</ion-label>
-      <ion-select placeholder="selecciona">
-        <ion-select-option value="p">Principiante</ion-select-option>
-        <ion-select-option value="m">Intermedio</ion-select-option>
-        <ion-select-option value="E"> Experto</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+      <ion-item>
+        <ion-label color="primary">Nivel de conocimiento</ion-label>
+        <ion-select placeholder="selecciona">
+          <ion-select-option value="p">Principiante</ion-select-option>
+          <ion-select-option value="m">Intermedio</ion-select-option>
+          <ion-select-option value="E"> Experto</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
 
-  <div class="boton">
-    <ion-button expand="block">Guardar</ion-button>
-  </div>
-
-</ion-content>
+    <div class="boton">
+  <ion-button expand="block">Guardar</ion-button>
+</div>
 
 <ion-footer div class="pie">
   <p>Cerrar sesión</p>
 </ion-footer>
+
+</ion-content>
