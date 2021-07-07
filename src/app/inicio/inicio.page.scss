@@ -1,6 +1,4 @@
-#boto{
-    border-radius: 10px;
- }
+
  
  
  .contenido{
@@ -8,23 +6,18 @@
      padding-top: 40px;
  }
  
- .text{
-     margin-left: 20px;
-     color: #0000FF;
-     border-top:2px solid blanchedalmond;
- }
- 
  
  .bot{
-     padding-top: 70px;
+     padding-top: 40px;
      margin: 40px;
   
  }
  
  
- .pie{
-     text-align: center;
-     color:  #0000FF;
-     font-size: 14px;
+ .pie p {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #4278be;
  }
  

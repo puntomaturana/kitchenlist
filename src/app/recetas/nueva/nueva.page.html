@@ -1,9 +1,8 @@
 <ion-header>
-	<ion-toolbar>
-		<ion-title>Crear</ion-title>
+	<ion-toolbar color="primary">
+		<ion-title color="light">Crear</ion-title>
 		<ion-button size="small" color="medium" slot="end">Guardar</ion-button>
-		<ion-button size="small" slot="end">Publicar</ion-button>
-
+		<ion-button size="small" style="color:lightcyan" slot="end">Publicar</ion-button>
 	</ion-toolbar>
 </ion-header>
 
@@ -30,8 +29,8 @@
 			<ion-textarea></ion-textarea>
 		</ion-item>
 	</div>
-
-	<div class="form ingredientes ion-padding">
+	
+	<div class="form-ingredientes-ion-padding">
 		<h3>Ingredientes</h3>
 		<ion-item class="item">
 			<ion-label position="floating">1. Ingrediente y medida</ion-label>
@@ -51,41 +50,62 @@
 			<ion-label position="floating">3. Ingrediente y medida</ion-label>
 			<ion-input></ion-input>
 			<ion-button color="danger" class="btn-delete" size="small" color="light">
+				<ion-icon  name="trash"></ion-icon>
+			</ion-button>
+		</ion-item>
+		  <div class="botone">
+			<ion-button Agregar Imagen>
+		    <ion-icon style="color:lightcyan" zise="default" name="add-outline"></ion-icon>
+			Agregar Imagen
+			  </ion-button>
+	   </div>
+	</div>
+<br>
+	<div class="form-pasos-ion-padding">
+		<h3>Ingredientes</h3>
+		<ion-item class="item">
+			<ion-label position="floating">1. Ingrediente y medida</ion-label>
+			<ion-input></ion-input>
+			<ion-button color="danger" class="btn-delete" size="small" color="light">
 				<ion-icon name="trash"></ion-icon>
 			</ion-button>
 		</ion-item>
-		<ion-button color="primary" class="ion-margin-top">Nuevo ingrediente</ion-button>
-	</div>
+		<ion-button class="ion-margin-top" color="medium" size="default">
+			<ion-icon name="camera-outline"></ion-icon>
+			   Agregar Imagen
+		   </ion-button>
 
-	<div class="form pasos ion-padding">
-		<h3>Pasos a seguir</h3>
-		<div class="paso">
-			<p class="bot">1</p>
-			<ion-item>
-				<ion-label position="floating">Escribe una descripción del paso</ion-label>
-				<ion-input></ion-input>
-				<ion-button color="danger" class="btn-delete" size="small" color="light">
-					<ion-icon name="trash"></ion-icon>
-				</ion-button>
-			</ion-item>
-			<div class="ion-text-center">
-				<ion-button class="ion-margin-top" color="medium" size="default">Agregar Imagen</ion-button>
-			</div>
-		</div>
-		<div class="paso">
-			<p class="bot">2</p>
-			<ion-item>
-				<ion-label position="floating">Escribe una descripción del paso</ion-label>
-				<ion-input></ion-input>
-				<ion-button color="danger" class="btn-delete" size="small" color="light">
-					<ion-icon name="trash"></ion-icon>
-				</ion-button>
-			</ion-item>
-			<div class="ion-text-center">
-				<ion-button class="ion-margin-top" color="medium" size="default">Agregar Imagen</ion-button>
-			</div>
-		</div>
-		<ion-button color="primary" class="ion-margin-top">Nuevo paso</ion-button>
+		<ion-item class="item">
+			<ion-label position="floating">2. Ingrediente y medida</ion-label>
+			<ion-input></ion-input>
+			<ion-button color="danger" class="btn-delete" size="small" color="light">
+				<ion-icon name="trash"></ion-icon>
+			</ion-button>
+		</ion-item>
+		<ion-button class="ion-margin-top" color="medium" size="default">
+		 <ion-icon name="camera-outline"></ion-icon>
+			Agregar Imagen
+        </ion-button>
+
+		<ion-item class="item">
+			<ion-label position="floating">3. Ingrediente y medida</ion-label>
+			<ion-input></ion-input>
+			<ion-button color="danger" class="btn-delete" size="small" color="light">
+				<ion-icon  name="trash"></ion-icon>
+			</ion-button>
+		</ion-item>
+		<ion-button class="ion-margin-top" color="medium" size="default">
+			<ion-icon name="camera-outline"></ion-icon>
+			   Agregar Imagen
+		   </ion-button>
+
+		  <div class="botone">
+			<ion-button>
+				<ion-icon zise="default" name="add-outline"></ion-icon>
+			    Agregar pasos
+			</ion-button>
+	   </div>
 	</div>
 
 </ion-content>
+

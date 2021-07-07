@@ -1,9 +1,27 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>recetas</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title color="light">pregunta recetas</ion-title>
+    <ion-buttons slot="end">
+			<ion-menu-button color="light" autoHide="false"></ion-menu-button>
+		</ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<img src="https://st.depositphotos.com/1732591/1280/v/600/depositphotos_12800617-stock-illustration-chef-hat.jpg" alt="">
+
+<ion-content>
+<h1>categoría</h1>
+<p>Escribe el nombre de tu categoria</p>
+
+<ion-list div class="list">
+  <ion-item>
+    <ion-label color-text="dark" position="floating">Nueva categoria</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  </ion-list>
+
+  <div class="boton">
+    <ion-button style="color:lightcyan" expand="block">Crear Categoria</ion-button>
+  </div>
 </ion-content>

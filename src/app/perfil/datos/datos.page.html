@@ -1,56 +1,59 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Perfil</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title color="light">Perfil</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
     <ion-buttons slot="end">
-			<ion-menu-button autoHide="false"></ion-menu-button>
-		</ion-buttons>
-   </ion-toolbar>
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
-<ion-segment div class="tab">
-  <ion-segment-button value="datos recomendados">
-    <ion-label>Datos Generales</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="datos personales">
-    <ion-label>informacion personal</ion-label>
-  </ion-segment-button>
-</ion-segment>
-
 <ion-content>
- <ion-avatar div class=img>
-    <img src="https://www.ecestaticos.com/image/clipping/37e2ae50a6bed84cddb4becb3d0fc603/esta-es-una-de-las-personas-mas-inteligentes-del-mundo-y-va-a-cambiarlo-para-siempre.jpg" class="center">
+  <ion-segment div class="tab">
+    <ion-segment-button value="datos recomendados">
+      <ion-label>Datos Generales</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="datos personales">
+      <ion-label>informacion personal</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <br>
+
+  <ion-avatar div class=img>
+    <img
+      src="https://www.ecestaticos.com/image/clipping/37e2ae50a6bed84cddb4becb3d0fc603/esta-es-una-de-las-personas-mas-inteligentes-del-mundo-y-va-a-cambiarlo-para-siempre.jpg"
+      class="center">
   </ion-avatar>
 
   <ion-list div class="list">
-  <ion-item>
-    <ion-label color="primary" position="floating">Correo electronico</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
-  <ion-item>
-    
-    <ion-label color="primary" position="floating">Numero de telefono</ion-label>
-    <ion-input type="tel"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label color-text="dark" position="floating">Correo electronico</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
 
-<ion-item>
-    <ion-label color="primary">Sexo</ion-label>
-    <ion-select placeholder="seleccion">
-      <ion-select-option value="f">Mujer</ion-select-option>
-      <ion-select-option value="m">Hombre</ion-select-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
+      <ion-label color-text="dark" position="floating">Numero de telefono</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
 
-<div class="boton">
-  <ion-button expand="block">Guardar</ion-button>
-</div>
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select placeholder="seleccion">
+        <ion-select-option value="f">Mujer</ion-select-option>
+        <ion-select-option value="m">Hombre</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="boton">
+    <ion-button style="color:lightcyan" expand="block">Guardar</ion-button>
+  </div>
+
+  <ion-footer div class="pie ion-padding">
+    <p>Cambiar Contraseña</p>
+  </ion-footer>
 
 </ion-content>
-
-<ion-footer div class="pie">
-  <p>Cambiar Contraseña</p>
-</ion-footer>
