@@ -12,4 +12,8 @@ export class RecomendadasPage implements OnInit {
   ngOnInit() {
   }
 
+  menu() {
+    console.log('funciona el menu');
+  }
+
 }

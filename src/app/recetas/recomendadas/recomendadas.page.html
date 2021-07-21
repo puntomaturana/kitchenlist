@@ -15,9 +15,9 @@
 			<ion-title size="large">KitchenList</ion-title>
 		</ion-toolbar>
 	</ion-header>
-	
+
 	<!-- Tabs de opciones recomendadas -->
-	
+
 	<ion-segment>
 		<ion-segment-button value="recomendados">
 			<ion-label>Recomendados</ion-label>
@@ -29,36 +29,49 @@
 			<ion-label>Guardados</ion-label>
 		</ion-segment-button>
 	</ion-segment>
-	
+
 	<!-- boton de filtro -->
 	<ion-button size="small" color="light" class="ion-margin-top">
 		<ion-icon name="swap-vertical-outline"></ion-icon>
 		Ordenar
 	</ion-button>
-	
+
 	<section>
 		<ion-card>
 			<ion-grid>
 				<ion-row>
-					<ion-col size="4">
-						<ion-img style="height: 100%; object-fit: cover;" src="https://www.annarecetasfaciles.com/files/lasana-de-carne-2-1-815x458.jpg"></ion-img>
+					<ion-col size="4" routerLink="/recetas/detalle">
+						<ion-img style="height: 100%; object-fit: cover;"
+							src="https://www.annarecetasfaciles.com/files/lasana-de-carne-2-1-815x458.jpg"></ion-img>
 					</ion-col>
 					<ion-col size="8">
 						<ion-card-header>
 							<ion-grid class="ion-no-padding">
 								<ion-row class="ion-no-padding ion-align-items-center">
-									<ion-col class="ion-text-start">
+									<ion-col class="ion-text-start" routerLink="/recetas/detalle">
 										<ion-card-title>lasagne Clasica</ion-card-title>
 									</ion-col>
 									<ion-col class="ion-text-end">
-										<ion-button color="light"><ion-icon color="primary" name="ellipsis-vertical"></ion-icon></ion-button>
+										<ion-item>
+											<ion-label class="no-border">
+												<ion-icon color="primary" name="ellipsis-vertical"></ion-icon>
+											</ion-label>
+											<ion-select value="notifications" interface="action-sheet">
+											  <ion-select-option value="share">Compartir</ion-select-option>
+											  <ion-select-option value="download">Descargar</ion-select-option>
+											  <ion-select-option value="copy">Copiar Link</ion-select-option>
+											  <ion-select-option value="delete">Eliminar Receta</ion-select-option>
+											</ion-select>
+										</ion-item>
 									</ion-col>
 								</ion-row>
 							</ion-grid>
 						</ion-card-header>
-						<ion-card-content>
+						<ion-card-content routerLink="/recetas/detalle">
 							<div class="description">
-								<p> Se suele servir en láminas superpuestas intercaladas con capas de ingredientes al gusto, más frecuentemente carne en salsa boloñesa y bechamel. Su origen es italiano y el plato preparado usualmente con carne suele llamarse lasaña al horno</p>
+								<p> Se suele servir en láminas superpuestas intercaladas con capas de ingredientes al
+									gusto, más frecuentemente carne en salsa boloñesa y bechamel. Su origen es italiano
+									y el plato preparado usualmente con carne suele llamarse lasaña al horno</p>
 							</div>
 							<div class="footer">
 								<ion-grid class="ion-no-padding">
@@ -67,12 +80,15 @@
 											<div class="ranking">
 												<ion-grid class="ion-no-padding">
 													<ion-row class="ion-align-items-center ion-no-padding">
-														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;"
+															class="ion-justify-content-around">
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
-															<ion-icon style="color:orange" name="star-half-outline"></ion-icon>
-															<ion-icon style="color:orange" name="star-outline"></ion-icon>
+															<ion-icon style="color:orange" name="star-half-outline">
+															</ion-icon>
+															<ion-icon style="color:orange" name="star-outline">
+															</ion-icon>
 														</ion-col>
 														<ion-col size="4">
 															3.5
@@ -82,7 +98,9 @@
 											</div>
 										</ion-col>
 										<ion-col class="ion-text-end">
-											<ion-button color="light"><ion-icon color="danger" name="heart"></ion-icon></ion-button>
+											<ion-button color="light">
+												<ion-icon color="danger" name="heart"></ion-icon>
+											</ion-button>
 										</ion-col>
 									</ion-row>
 								</ion-grid>
@@ -90,31 +108,44 @@
 						</ion-card-content>
 					</ion-col>
 				</ion-row>
-			</ion-grid>	
+			</ion-grid>
 		</ion-card>
-          <br>
+		<br>
 		<ion-card>
 			<ion-grid>
 				<ion-row>
-					<ion-col size="4">
-						<ion-img style="height: 100%; object-fit: cover;" src="https://danzadefogones.com/wp-content/uploads/2020/04/One-Pot-Pasta-5.jpg"></ion-img>
+					<ion-col size="4" routerLink="/recetas/detalle">
+						<ion-img style="height: 100%; object-fit: cover;"
+							src="https://danzadefogones.com/wp-content/uploads/2020/04/One-Pot-Pasta-5.jpg"></ion-img>
 					</ion-col>
 					<ion-col size="8">
 						<ion-card-header>
 							<ion-grid class="ion-no-padding">
 								<ion-row class="ion-no-padding ion-align-items-center">
-									<ion-col class="ion-text-start">
+									<ion-col class="ion-text-start" routerLink="/recetas/detalle">
 										<ion-card-title>Espagueti con Salsa</ion-card-title>
 									</ion-col>
 									<ion-col class="ion-text-end">
-										<ion-button color="light"><ion-icon color="primary" name="ellipsis-vertical"></ion-icon></ion-button>
+										<ion-item>
+											<ion-label class="no-border">
+												<ion-icon color="primary" name="ellipsis-vertical"></ion-icon>
+											</ion-label>
+											<ion-select value="notifications" interface="action-sheet">
+											  <ion-select-option value="share">Compartir</ion-select-option>
+											  <ion-select-option value="download">Descargar</ion-select-option>
+											  <ion-select-option value="copy">Copiar Link</ion-select-option>
+											  <ion-select-option value="delete">Eliminar Receta</ion-select-option>
+											</ion-select>
+										</ion-item>
 									</ion-col>
 								</ion-row>
 							</ion-grid>
 						</ion-card-header>
-						<ion-card-content>
+						<ion-card-content routerLink="/recetas/detalle">
 							<div class="description">
-								<p>Spaghetti con salsa boloñesa o bolognesa una receta muy popular y sabrosa. Siempre hay variedades en su preparación, con pequeños detalles en cuanto a los ingredientes para hacer la boloñesa.</p>
+								<p>Spaghetti con salsa boloñesa o bolognesa una receta muy popular y sabrosa. Siempre
+									hay variedades en su preparación, con pequeños detalles en cuanto a los ingredientes
+									para hacer la boloñesa.</p>
 							</div>
 							<div class="footer">
 								<ion-grid class="ion-no-padding">
@@ -123,12 +154,15 @@
 											<div class="ranking">
 												<ion-grid class="ion-no-padding">
 													<ion-row class="ion-align-items-center ion-no-padding">
-														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;"
+															class="ion-justify-content-around">
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
-															<ion-icon style="color:orange" name="star-outline"></ion-icon>
-															<ion-icon style="color:orange" name="star-outline"></ion-icon>
+															<ion-icon style="color:orange" name="star-outline">
+															</ion-icon>
+															<ion-icon style="color:orange" name="star-outline">
+															</ion-icon>
 														</ion-col>
 														<ion-col size="4">
 															3.0
@@ -138,7 +172,9 @@
 											</div>
 										</ion-col>
 										<ion-col class="ion-text-end">
-											<ion-button color="light"><ion-icon color="danger" name="heart"></ion-icon></ion-button>
+											<ion-button color="light">
+												<ion-icon color="danger" name="heart"></ion-icon>
+											</ion-button>
 										</ion-col>
 									</ion-row>
 								</ion-grid>
@@ -146,31 +182,45 @@
 						</ion-card-content>
 					</ion-col>
 				</ion-row>
-			</ion-grid>	
+			</ion-grid>
 		</ion-card>
-            <br>
+		<br>
 		<ion-card>
 			<ion-grid>
 				<ion-row>
-					<ion-col size="4">
-						<ion-img style="height: 100%; object-fit: cover;" src="https://i0.wp.com/alcachofffa.com/wp-content/uploads/2020/05/97164474_147098716861765_8638172258984918281_n1.jpg?fit=750%2C938&ssl=1"></ion-img>
+					<ion-col size="4" routerLink="/recetas/detalle">
+						<ion-img style="height: 100%; object-fit: cover;"
+							src="https://i0.wp.com/alcachofffa.com/wp-content/uploads/2020/05/97164474_147098716861765_8638172258984918281_n1.jpg?fit=750%2C938&ssl=1">
+						</ion-img>
 					</ion-col>
 					<ion-col size="8">
 						<ion-card-header>
 							<ion-grid class="ion-no-padding">
 								<ion-row class="ion-no-padding ion-align-items-center">
-									<ion-col class="ion-text-start">
+									<ion-col class="ion-text-start" routerLink="/recetas/detalle">
 										<ion-card-title>Tacos al pastor</ion-card-title>
 									</ion-col>
 									<ion-col class="ion-text-end">
-										<ion-button color="light"><ion-icon color="primary" name="ellipsis-vertical"></ion-icon></ion-button>
+										<ion-item>
+											<ion-label class="no-border">
+												<ion-icon color="primary" name="ellipsis-vertical"></ion-icon>
+											</ion-label>
+											<ion-select value="notifications" interface="action-sheet">
+											  <ion-select-option value="share">Compartir</ion-select-option>
+											  <ion-select-option value="download">Descargar</ion-select-option>
+											  <ion-select-option value="copy">Copiar Link</ion-select-option>
+											  <ion-select-option value="delete">Eliminar Receta</ion-select-option>
+											</ion-select>
+										</ion-item>
 									</ion-col>
 								</ion-row>
 							</ion-grid>
 						</ion-card-header>
-						<ion-card-content>
+						<ion-card-content routerLink="/recetas/detalle">
 							<div class="description">
-								<p>Además, la carne es preparada con un marinado tradicional mexicano llamado adobo, el cual está hecho con achiote, especias y chiles rojos molidos chiles rojos molidoschiles rojos molidos chiles rojos molidos chiles rojos molidos.</p>
+								<p>Además, la carne es preparada con un marinado tradicional mexicano llamado adobo, el
+									cual está hecho con achiote, especias y chiles rojos molidos chiles rojos
+									molidoschiles rojos molidos chiles rojos molidos chiles rojos molidos.</p>
 							</div>
 							<div class="footer">
 								<ion-grid class="ion-no-padding">
@@ -179,12 +229,14 @@
 											<div class="ranking">
 												<ion-grid class="ion-no-padding">
 													<ion-row class="ion-align-items-center ion-no-padding">
-														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;"
+															class="ion-justify-content-around">
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
-															<ion-icon style="color:orange" name="star-half-outline"></ion-icon>
+															<ion-icon style="color:orange" name="star-half-outline">
+															</ion-icon>
 														</ion-col>
 														<ion-col size="4">
 															4.5
@@ -194,7 +246,9 @@
 											</div>
 										</ion-col>
 										<ion-col class="ion-text-end">
-											<ion-button color="light"><ion-icon color="danger" name="heart"></ion-icon></ion-button>
+											<ion-button color="light">
+												<ion-icon color="danger" name="heart"></ion-icon>
+											</ion-button>
 										</ion-col>
 									</ion-row>
 								</ion-grid>
@@ -202,31 +256,45 @@
 						</ion-card-content>
 					</ion-col>
 				</ion-row>
-			</ion-grid>	
+			</ion-grid>
 		</ion-card>
 		<br>
 		<ion-card>
 			<ion-grid>
 				<ion-row>
-					<ion-col size="4">
-						<ion-img style="height: 100%; object-fit: cover;" src="https://content-cocina.lecturas.com/medio/2018/07/19/salteado-de-arroz-con-pollo-y-verduras_51c8e822_800x800.jpg"></ion-img>
+					<ion-col size="4" routerLink="/recetas/detalle">
+						<ion-img style="height: 100%; object-fit: cover;"
+							src="https://content-cocina.lecturas.com/medio/2018/07/19/salteado-de-arroz-con-pollo-y-verduras_51c8e822_800x800.jpg">
+						</ion-img>
 					</ion-col>
 					<ion-col size="8">
 						<ion-card-header>
 							<ion-grid class="ion-no-padding">
 								<ion-row class="ion-no-padding ion-align-items-center">
-									<ion-col class="ion-text-start">
+									<ion-col class="ion-text-start" routerLink="/recetas/detalle">
 										<ion-card-title>Salteado de pollo</ion-card-title>
 									</ion-col>
 									<ion-col class="ion-text-end">
-										<ion-button color="light"><ion-icon color="primary" name="ellipsis-vertical"></ion-icon></ion-button>
+										<ion-item>
+											<ion-label class="no-border">
+												<ion-icon color="primary" name="ellipsis-vertical"></ion-icon>
+											</ion-label>
+											<ion-select value="notifications" interface="action-sheet">
+											  <ion-select-option value="share">Compartir</ion-select-option>
+											  <ion-select-option value="download">Descargar</ion-select-option>
+											  <ion-select-option value="copy">Copiar Link</ion-select-option>
+											  <ion-select-option value="delete">Eliminar Receta</ion-select-option>
+											</ion-select>
+										</ion-item>
 									</ion-col>
 								</ion-row>
 							</ion-grid>
 						</ion-card-header>
-						<ion-card-content>
+						<ion-card-content routerLink="/recetas/detalle">
 							<div class="description">
-								<p> La receta de salteado de pollo con verduras es fácil y rápida de hacer, es ideal para servir cuando tenemos invitados o nos apetece disfrutar de una cena más ligera y saludable.</p>
+								<p> La receta de salteado de pollo con verduras es fácil y rápida de hacer, es ideal
+									para servir cuando tenemos invitados o nos apetece disfrutar de una cena más ligera
+									y saludable.</p>
 							</div>
 							<div class="footer">
 								<ion-grid class="ion-no-padding">
@@ -235,12 +303,15 @@
 											<div class="ranking">
 												<ion-grid class="ion-no-padding">
 													<ion-row class="ion-align-items-center ion-no-padding">
-														<ion-col size="8" class="ion-no-padding" style="display: flex;" class="ion-justify-content-around">
+														<ion-col size="8" class="ion-no-padding" style="display: flex;"
+															class="ion-justify-content-around">
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
 															<ion-icon style="color:orange" name="star"></ion-icon>
-															<ion-icon style="color:orange" name="star-half-outline"></ion-icon>
-															<ion-icon style="color:orange" name="star-outline"></ion-icon>
+															<ion-icon style="color:orange" name="star-half-outline">
+															</ion-icon>
+															<ion-icon style="color:orange" name="star-outline">
+															</ion-icon>
 														</ion-col>
 														<ion-col size="4">
 															3.5
@@ -250,7 +321,9 @@
 											</div>
 										</ion-col>
 										<ion-col class="ion-text-end">
-											<ion-button color="light"><ion-icon color="danger" name="heart"></ion-icon></ion-button>
+											<ion-button color="light">
+												<ion-icon color="danger" name="heart"></ion-icon>
+											</ion-button>
 										</ion-col>
 									</ion-row>
 								</ion-grid>
@@ -258,9 +331,9 @@
 						</ion-card-content>
 					</ion-col>
 				</ion-row>
-			</ion-grid>	
+			</ion-grid>
 		</ion-card>
 	</section>
-	
+
 	<!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
